@@ -23,24 +23,24 @@ import java.awt.Rectangle;
 public class Gameplay extends JPanel implements KeyListener,   ActionListener {
     private boolean play =  false;
     private Timer timer;
-    private int delay= -10;
+    private int delay= 0;
     public int score = 10;
     public int finalScore;
     private int PlayerX = 200;
     private int BallXpos=(int)(Math.random()*(500-100+1)+100);
     private int BallYpos=(int)(Math.random()*(360-200+1)+200);
     private int BallXdir= -1;
-    private int BallYdir= -4;
+    private int BallYdir= -5;
     private int fire_downY = -70;
     private int fire_downX = 190;
-    private int fire_downYdir = 3;
+    private int fire_downYdir = 4;
     private int fire_leftY = -59;
     private int fire_leftX = 130;
-    private int fire_leftYdir = 2;
+    private int fire_leftYdir = 3;
     private int fire_leftXdir = -1;
     private int fire_rightY = -69;
     private int fire_rightX = 210;
-     private int fire_rightYdir = 2;
+     private int fire_rightYdir = 3;
     private int fire_rightXdir = 1;
     private int dragonIntersected = 0;
     private boolean paddleHitByFire=false;
@@ -221,7 +221,7 @@ public class Gameplay extends JPanel implements KeyListener,   ActionListener {
         fire_leftX += fire_leftXdir;
         fire_rightY += fire_rightYdir;
         fire_rightX += fire_rightXdir;
-    }
+        }
         if (fire_downY > 592) {
             // Reset the fire's position when it reaches the bottom
             fire_downY = -70;
@@ -229,9 +229,10 @@ public class Gameplay extends JPanel implements KeyListener,   ActionListener {
             fire_leftX = 130;
             fire_rightY = -69;
             fire_rightX = 210;
+
         }     
         // Repaint the panel to update the ball's position
-        repaint(); 
+            repaint();
        
         } 
 }
