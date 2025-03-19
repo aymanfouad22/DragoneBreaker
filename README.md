@@ -13,7 +13,7 @@
     <h2>Installation</h2>
     <ol>
         <li><strong>Clone the Repository</strong>:
-            <pre><code>git clone https://github.com/yourusername/dragon-breaker.git
+            <pre><code>git clone https://github.com/aymanfouad22/DragoneBreaker.git
 cd dragon-breaker</code></pre>
         </li>
         <li><strong>Requirements</strong>:
