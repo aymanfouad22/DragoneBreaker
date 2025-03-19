@@ -14,7 +14,7 @@
     <ol>
         <li><strong>Clone the Repository</strong>:
             <pre><code>git clone https://github.com/aymanfouad22/DragoneBreaker.git
-cd dragon-breaker</code></pre>
+cd DragoneBreaker</code></pre>
         </li>
         <li><strong>Requirements</strong>:
             <ul>
